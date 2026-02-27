@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="Sweet TV">
+        <setting label="Bejelentkezési adatok:" type="lsep"/>
+        <setting id="username"  type="text" label="E-mail" default="" />
+        <setting id="password"  type="text" label="Jelszó" option="hidden"  default="" />
+		<setting label="Lejátszás:" type="lsep"/>
+        <setting id="playerType" type="select" label="Lejátszó típusa" values="ISA|ffmpeg" default="ISA" />
+        <setting id="debug_log" type="bool" label="Debug mód (logolás)" default="false" />
+    </category>
+	<category label="m3u fájl készítő">
+        <setting label="m3u lista (Fájlnév és célkönyvtár)" type="lsep"/>
+        <setting label="Név" type="text" id="fname" default="iptv.m3u"/>
+        <setting label="Célkönyvtár" type="folder" id="path_m3u" source="auto" option="writeable"/>
+		<setting type="action" action="RunPlugin(plugin://plugin.video.sweettvhu/listM3U)" label="m3u lista létrehozása" option="close"/>
+	</category>
+    <setting id="logged" value="" default="false"/>
+    <setting id="refresh_token" value="" default=""/>
+    <setting id="uuid" value="" default=""/>
+    <setting id="bearer" value="" default=""/>
+</settings>
