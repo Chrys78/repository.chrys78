@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.chrys78"
+       name="Chrys78 Repository"
+       version="1.0.0"
+       provider-name="Chrys78">
+
+    <extension point="xbmc.addon.repository">
+        <info compressed="false">https://raw.githubusercontent.com/Chrys78/repository.chrys78/main/addons.xml</info>
+        <datadir>https://raw.githubusercontent.com/Chrys78/repository.chrys78/main/</datadir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>Chrys78 Kodi Repository</summary>
+        <description>SweetTV addon repository</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+
+</addon>
